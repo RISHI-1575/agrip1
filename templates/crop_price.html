@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Price Prediction</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Crop Price Prediction</h1>
+    <form action="/crop_price" method="POST">
+        <label for="crop">Crop Name:</label>
+        <select name="crop" id="crop">
+            <option value="Wheat">Wheat</option>
+            <option value="Rice">Rice</option>
+            <option value="Maize">Maize</option>
+        </select>
+        <br>
+        <label for="region">Region:</label>
+        <select name="region" id="region">
+            <option value="Region1">Region 1</option>
+            <option value="Region2">Region 2</option>
+        </select>
+        <br>
+        <button type="submit">Predict Prices</button>
+    </form>
+</body>
+</html>
