@@ -1,0 +1,4 @@
+Region,Soil,Crop,Suitability,ExpectedYield
+Region1,Loamy,Wheat,High,2000
+Region1,Sandy,Rice,Medium,1500
+Region2,Loamy,Maize,High,1800
