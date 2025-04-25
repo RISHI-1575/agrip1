@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Marketplace</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Crop</th>
+                <th>Quantity</th>
+                <th>Location</th>
+                <th>Expected Purchase Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.company }}</td>
+                <td>{{ item.crop }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.location }}</td>
+                <td>{{ item.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
